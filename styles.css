@@ -34,8 +34,20 @@ a {
   text-align: center;
 }
 /* clearfix */
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  clear: both;
+  display: table;
+}
 
 /* globals */
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .main-btn {
   display: inline-block;
   background: var(--primaryColor);
